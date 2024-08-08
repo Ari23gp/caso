@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería Elegante</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Cafetería Elegante</h1>
+        <div class="cart" onclick="viewCart()">
+            <span id="cart-count">0</span>
+            <img src="cart-icon.png" alt="Carrito de Compras">
+        </div>
+    </header>
+
+    <main>
+        <section class="products">
+            <div class="product">
+                <img src="espresso.jpg" alt="Café Espresso">
+                <h2>Café Espresso</h2>
+                <p>$2.00</p>
+                <button onclick="addToCart('Café Espresso', 2)">Agregar al Carrito</button>
+            </div>
+            <div class="product">
+                <img src="croissant.jpg" alt="Croissant">
+                <h2>Croissant</h2>
+                <p>$1.50</p>
+                <button onclick="addToCart('Croissant', 1.5)">Agregar al Carrito</button>
+            </div>
+            <div class="product">
+                <img src="cappuccino.jpg" alt="Capuchino">
+                <h2>Capuchino</h2>
+                <p>$3.00</p>
+                <button onclick="addToCart('Capuchino', 3)">Agregar al Carrito</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
